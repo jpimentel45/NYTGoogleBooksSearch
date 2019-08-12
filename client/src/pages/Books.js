@@ -48,12 +48,6 @@ class Books extends Component {
                 {this.state.books.map(book => (
                   <ListItem 
                   key={book._id}
-                    title={book.volumeInfo.title}
-                    subtitle={book.volumeInfo.subtitle}
-                    link={book.volumeInfo.infoLink}
-                    authors={book.volumeInfo.authors.join(", ")}
-                    description={book.volumeInfo.description}
-                    image={book.volumeInfo.imageLinks.thumbnail}
                   >
                     <a href={"/books/" + book._id}>
                       <strong>
